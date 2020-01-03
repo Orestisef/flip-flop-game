@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=greek" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+        <div class="round" id="round" style="font-size: 30px;font-weight: 400;color: white;"><button type="button" class="btn btn-outline-primary btn-block"  onclick="countDown(32, 'status')">Go!</button></div>
+      <div class="count" id="count" style="font-size: 30px;font-weight: 400;color: white;"></div>
+      <div class="life" id="life" style="font-size: 30px;font-weight: 400;color: white;"></div>
+      <div class="info" id="status" style="font-size: 50px;font-weight: 900;color: white;"></div>
+      <div class="wins" id="wins" style="font-size: 30px;font-weight: 400;color: white;"></div>
+      <div class="gameOver" id="gameOver" style="font-size: 100px;font-weight: 900;"></div>
+
+      <div class="replay" id="replay"></div>
+
+
+<div id="myDiv" class="animate-bottom">
+
+      <section class = "memory-game">
+        <div class="memory-card" data-framework="ember">
+          <img class = "front-face" src="img/ember.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="ember">
+          <img class = "front-face" src="img/ember.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="backbone">
+          <img class = "front-face" src="img/backbone.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="backbone">
+          <img class = "front-face" src="img/backbone.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="aurelia">
+          <img class = "front-face" src="img/aurelia.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="aurelia">
+          <img class = "front-face" src="img/aurelia.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="angular">
+          <img class = "front-face" src="img/angular.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="angular">
+          <img class = "front-face" src="img/angular.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="react">
+          <img class = "front-face" src="img/react.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="react">
+          <img class = "front-face" src="img/react.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="vue">
+          <img class = "front-face" src="img/vue.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+        <div class="memory-card" data-framework="vue">
+          <img class = "front-face" src="img/vue.svg" alt="">
+          <img class = "back-face" src="img/js-badge.svg" alt="">
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

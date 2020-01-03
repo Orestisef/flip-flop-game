@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-image: url("4.jpg");
+}
+
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  position: relative;
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1c7ccc;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+#myDiv {
+  display: none;
+  margin: auto;
+}
+
+
+.info {
+  z-index: 5;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+.round {
+  z-index: 5;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+.count {
+  z-index: 5;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+.life{
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+.gameOver{
+  height: 100vh;
+  position: ;
+  top: 40%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  animation: blinker 1s linear infinite;
+  color: #ffff;
+}
+
+.exitButton {
+  z-index: 5;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+.replay {
+  z-index: 5;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Add animation to "page content" */
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { right:-100px; opacity:0 }
+  to { right:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ right:-100px; opacity:0 }
+  to{ right:0; opacity:1 }
+}
